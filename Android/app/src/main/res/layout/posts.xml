@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginVertical="2sp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="25sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:text="Manish Rathod"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginHorizontal="20sp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/createdAt"
+                android:text="time"
+                android:textSize="10sp"
+                android:layout_marginHorizontal="40sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content"
+                android:textSize="15sp"
+                android:text="hello world"
+                android:layout_marginLeft="30sp"></TextView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:id="@+id/postImage"
+                android:layout_marginHorizontal="10sp"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/likes"
+                    app:icon="@drawable/like"
+                    app:iconSize="30sp"
+                    app:iconTint="@color/grey"
+                    android:text="likes"
+                    android:textColor="@color/black"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_marginHorizontal="10sp"></com.google.android.material.button.MaterialButton>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comments"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:text="comments"
+                    android:textColor="@color/black"
+                    app:rippleColor="@color/grey"
+                    android:layout_marginHorizontal="10sp"></com.google.android.material.button.MaterialButton>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
